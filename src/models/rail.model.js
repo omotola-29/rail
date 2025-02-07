@@ -1,15 +1,15 @@
 const mongoose = require('mongoose');
 
 const railSchema = new mongoose.Schema({
-    Name: {
+    name: {
         type: String,
         required: true
     },
-    Destination: {
+    destination: {
         type: String,
         required: true
     },
-    Age: {
+    age: {
         type: Number,
         required: true
     },
@@ -21,10 +21,7 @@ const railSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    bookingStatus: {
-        type: String,
-        default: false
-    }
+
 },
 {
     versionKey: false,
